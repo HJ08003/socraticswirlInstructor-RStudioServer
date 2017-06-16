@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO2	15	mpachon	FSI2017	Mon Jun 12 17:46:02 2017	TRUE	FALSE	pop.million <- world.pop/1000	

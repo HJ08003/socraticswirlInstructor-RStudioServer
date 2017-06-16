@@ -1,0 +1,4 @@
+course	lesson	student	instructor	createdAt	question	addressed
+INTRO	INTRO1	hubertj	FSI2017	Tue Jun 13 17:01:20 2017	what does this mean?	FALSE
+INTRO	INTRO1	hubertj	FSI2017	Tue Jun 13 17:03:45 2017	skip now	FALSE
+INTRO	INTRO1	hubertj	FSI2017	Tue Jun 13 17:04:06 2017	what to do?	FALSE

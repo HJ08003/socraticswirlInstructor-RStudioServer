@@ -1,0 +1,4 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+DISCOVERY	DISCOVERY1	12	signoret	FSI2017	Mon Jun 12 16:36:07 2017	FALSE	TRUE	wordcloud(dtm.mat[ , 8])	Error in UseMethod("TermDocumentMatrix", x) : 
+  no applicable method for 'TermDocumentMatrix' applied to an object of class "c('double', 'numeric')"
+

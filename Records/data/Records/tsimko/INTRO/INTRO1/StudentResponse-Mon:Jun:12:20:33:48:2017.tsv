@@ -1,0 +1,3 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO1	17	tsimko	FSI2017	Mon Jun 12 20:33:48 2017	FALSE	TRUE	world.poop	Error: object 'world.poop' not found
+

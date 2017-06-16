@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO2	22	mpachon	FSI2017	Mon Jun 12 17:58:33 2017	FALSE	FALSE	print(" # starts every comment")	

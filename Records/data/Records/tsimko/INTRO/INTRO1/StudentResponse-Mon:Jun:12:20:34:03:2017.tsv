@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO1	19	tsimko	FSI2017	Mon Jun 12 20:34:03 2017	TRUE	FALSE	world.pop[c(1, 4)]	

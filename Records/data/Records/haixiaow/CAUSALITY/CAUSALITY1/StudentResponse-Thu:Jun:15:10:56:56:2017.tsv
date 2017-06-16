@@ -1,0 +1,3 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+CAUSALITY	CAUSALITY1	10	haixiaow	FSI2017	Thu Jun 15 10:56:56 2017	FALSE	TRUE	colMeans(resume)	Error in colMeans(resume) : 'x' must be numeric
+

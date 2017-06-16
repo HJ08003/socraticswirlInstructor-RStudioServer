@@ -1,0 +1,4 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO2	17	mpachon	FSI2017	Mon Jun 12 17:50:43 2017	FALSE	TRUE	data_path <- read.csv(data.csv)	Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  object 'data.csv' not found
+

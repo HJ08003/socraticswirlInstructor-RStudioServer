@@ -1,0 +1,3 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO2	17	mpachon	FSI2017	Mon Jun 12 17:50:58 2017	FALSE	TRUE	data_path <- read.csv("data.csv")	Error in file(file, "rt") : cannot open the connection
+

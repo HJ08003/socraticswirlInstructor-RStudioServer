@@ -1,0 +1,3 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+MEASUREMENT	MEASUREMENT1	11	tsimko	FSI2017	Mon Jun 12 20:38:25 2017	FALSE	TRUE	prop.table(afghan$province)	Error in sum(x) : invalid 'type' (character) of argument
+

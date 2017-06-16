@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO1	19	signoret	FSI2017	Mon Jun 12 16:11:39 2017	FALSE	FALSE	paste(world.pop[1], world.pop[4])	

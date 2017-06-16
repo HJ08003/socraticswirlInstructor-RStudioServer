@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO1	9	tsimko	FSI2017	Mon Jun 12 20:33:17 2017	TRUE	FALSE	result <- 8 - 2	

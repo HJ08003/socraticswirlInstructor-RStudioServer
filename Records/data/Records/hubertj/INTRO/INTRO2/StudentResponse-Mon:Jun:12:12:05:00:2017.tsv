@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO2	2	hubertj	FSI2017	Mon Jun 12 12:05:00 2017	TRUE	FALSE	4 * 7	

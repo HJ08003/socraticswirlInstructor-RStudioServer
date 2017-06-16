@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+MEASUREMENT	MEASUREMENT1	11	tsimko	FSI2017	Mon Jun 12 20:40:16 2017	TRUE	FALSE	prop.table(table(afghan$province, afghan$employed))	

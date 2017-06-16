@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+DISCOVERY	DISCOVERY1	12	signoret	FSI2017	Mon Jun 12 16:38:55 2017	TRUE	FALSE	wordcloud(colnames(dtm.mat), dtm.mat[8, ])	

@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO2	8	mpachon	FSI2017	Mon Jun 12 17:44:37 2017	TRUE	FALSE	myobject <- "10"	

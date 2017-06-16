@@ -1,0 +1,4 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+MEASUREMENT	MEASUREMENT1	11	tsimko	FSI2017	Mon Jun 12 20:39:39 2017	FALSE	TRUE	prop.table(afghan)	Error in FUN(X[[i]], ...) : 
+  only defined on a data frame with all numeric variables
+

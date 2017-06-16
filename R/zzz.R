@@ -20,8 +20,10 @@
     Instructor = "FSI2017",
     # CourseFolder = "/usr/local/R/FSI2017/Courses/qss-swirl-pol345",
     # RecordFolder = "/usr/local/R/FSI2017/Records",
-    CourseFolder = "/Users/hubertj/Desktop/NewProject/SocraticSwirl/socraticswirlInstructor-2016pol345/courses/qss-swirl-socraticswirl",
-    RecordFolder = "/Users/hubertj/Desktop/GithubClone/socraticswirlInstructor-RStudioServer/Records"
+    CourseFolder = "/users/hubertj/Desktop/GithubClone/socraticswirlInstructor-RStudioServer/Records/data/Courses/qss-swirl-pol345/",
+    # RecordFolder = "/Users/hubertj/Desktop/GithubClone/socraticswirlInstructor-RStudioServer/Records",
+    MergedFolder = "/Users/hubertj/Desktop/GithubClone/socraticswirlInstructor-RStudioServer/Records",
+    ShellScript = "/Users/hubertj/Desktop/GithubClone/socraticswirlInstructor-RStudioServer/Records/mergeStudentRecords.sh"
   )
   options(SocraticswirlInstructorRStudioServer = rstudioserver)
 

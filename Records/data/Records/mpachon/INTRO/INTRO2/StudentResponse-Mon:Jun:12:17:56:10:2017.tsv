@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO2	20	mpachon	FSI2017	Mon Jun 12 17:56:10 2017	TRUE	FALSE	UNpop$world.pop	

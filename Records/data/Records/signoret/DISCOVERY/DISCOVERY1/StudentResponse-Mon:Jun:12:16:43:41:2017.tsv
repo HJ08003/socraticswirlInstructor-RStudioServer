@@ -1,0 +1,3 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+DISCOVERY	DISCOVERY1	13	signoret	FSI2017	Mon Jun 12 16:43:41 2017	FALSE	TRUE	wordcloud(colnames(dtm.mat), dtm.mat[12, ], max.words = 20)	Error in dtm.mat[12, ] : subscript out of bounds
+

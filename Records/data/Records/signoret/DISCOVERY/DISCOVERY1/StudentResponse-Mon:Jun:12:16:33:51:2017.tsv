@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+DISCOVERY	DISCOVERY1	10	signoret	FSI2017	Mon Jun 12 16:33:51 2017	TRUE	FALSE	inspect(dtm[1:5, 1:8])	

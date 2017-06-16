@@ -1,0 +1,4 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO1	6	signoret	FSI2017	Mon Jun 12 16:06:48 2017	FALSE	TRUE	10**	Error in socratic_swirl("INTRO", "INTRO1") : 
+  could not find function "socratic_swirl"
+

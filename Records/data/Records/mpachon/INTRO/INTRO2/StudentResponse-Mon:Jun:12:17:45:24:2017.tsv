@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO2	12	mpachon	FSI2017	Mon Jun 12 17:45:24 2017	TRUE	FALSE	max(x)	

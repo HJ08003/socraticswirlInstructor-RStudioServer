@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO2	21	mpachon	FSI2017	Mon Jun 12 17:57:30 2017	TRUE	FALSE	UNpop$year[4:7]	

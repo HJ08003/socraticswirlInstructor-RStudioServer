@@ -96,7 +96,7 @@ shinyServer(function(input, output, session) {
   cacheQuestions <- reactive({
     input$refresh
     # parse_queryAll("StudentQuestion") %>% remove_df_columns()
-    load_student_list(paste0(getOption("SocraticswirlInstructorRStudioServer")$RecordFolder, "/","studentQuestion.tsv")) %>% remove_df_columns()
+    load_student_list(paste0(getOption("SocraticswirlInstructorRStudioServer")$MergedFolder, "/","studentQuestion.tsv")) %>% remove_df_columns()
   })
 
   cacheExercises <- reactive({
@@ -108,12 +108,16 @@ shinyServer(function(input, output, session) {
   cacheStudents <- reactive({
     input$refresh
     # slist = parse_queryAll("StudentList") %>% remove_df_columns() %>% distinct(email, .keep_all=TRUE)
-    slist = load_student_list(paste0(getOption("SocraticswirlInstructorRStudioServer")$RecordFolder, "/", "studentList.tsv")) %>% remove_df_columns() %>% distinct(email, .keep_all=TRUE)
+    slist = load_student_list(paste0(getOption("SocraticswirlInstructorRStudioServer")$MergedFolder, "/", "studentList.tsv")) %>% remove_df_columns() %>% distinct(email, .keep_all=TRUE)
     slist[slist$precept != "Dropped",]
   })
 
   cacheStudentResponses <- reactive({
     input$refresh
+
+    # Added June 16, 2017 to handle the updated by a shell script
+    system(getOption("SocraticswirlInstructorRStudioServer")$ShellScript)
+
     students <- cacheStudents()
     if (!is.null(students)) {
       sList <- unique(students$email)
@@ -121,7 +125,7 @@ shinyServer(function(input, output, session) {
 #      for (i in 2:length(sList)) {
 #        sRes = rbindx(sRes, parse_queryAll('StudentResponse', student = sList[i]) %>% remove_df_columns() )
 #      }
-      sRes <- load_student_list(paste0(getOption("SocraticswirlInstructorRStudioServer")$RecordFolder, "/", "studentResponse.tsv")) %>% filter(student %in% sList)
+      sRes <- load_student_list(paste0(getOption("SocraticswirlInstructorRStudioServer")$MergedFolder, "/", "studentResponse.tsv")) %>% filter(student %in% sList)
       sRes$isCorrect <- ifelse(sRes$command=='SKIPPED', NA, sRes$isCorrect)
       sRes$lesson <- toupper(sRes$lesson)
       sRes

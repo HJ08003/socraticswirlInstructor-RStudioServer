@@ -1,0 +1,3 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO1	22	signoret	FSI2017	Mon Jun 12 16:12:34 2017	FALSE	TRUE	year <- seq(1950:2010, 10)	Error in seq.default(1950:2010, 10) : 'from' must be of length 1
+

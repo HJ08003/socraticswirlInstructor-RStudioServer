@@ -1,0 +1,3 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO2	23	mpachon	FSI2017	Mon Jun 12 17:59:56 2017	FALSE	TRUE	load("utils")	Error in readChar(con, 5L, useBytes = TRUE) : cannot open the connection
+

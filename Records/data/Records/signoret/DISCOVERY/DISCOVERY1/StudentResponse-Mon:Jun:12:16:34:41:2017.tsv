@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+DISCOVERY	DISCOVERY1	11	signoret	FSI2017	Mon Jun 12 16:34:41 2017	TRUE	FALSE	dtm.mat <- as.matrix(dtm)	

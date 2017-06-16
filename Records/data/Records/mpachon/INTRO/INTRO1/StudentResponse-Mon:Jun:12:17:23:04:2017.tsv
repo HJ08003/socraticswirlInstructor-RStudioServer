@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO1	17	mpachon	FSI2017	Mon Jun 12 17:23:04 2017	TRUE	FALSE	world.pop	

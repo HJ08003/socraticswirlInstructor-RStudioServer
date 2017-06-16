@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+INTRO	INTRO1	25	signoret	FSI2017	Mon Jun 12 16:14:46 2017	TRUE	FALSE	x[1] <- NA	

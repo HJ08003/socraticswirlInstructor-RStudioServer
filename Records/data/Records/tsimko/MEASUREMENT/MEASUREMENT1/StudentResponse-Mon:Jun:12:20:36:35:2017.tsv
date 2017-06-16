@@ -1,0 +1,2 @@
+Course	Lesson	Exercise	Student	Instructor	Date	isCorrect	isError	Command	ErrorMassage
+MEASUREMENT	MEASUREMENT1	3	tsimko	FSI2017	Mon Jun 12 20:36:35 2017	TRUE	FALSE	at least one of its variables has a missing value	
