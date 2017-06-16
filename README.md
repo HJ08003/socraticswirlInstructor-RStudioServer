@@ -9,13 +9,11 @@ Socraticswirl had three major components, the student software, a parse.com data
 
 ### Installation and setup
 
-For more details, please download the [Socraticswirl Manual] (https://github.com/dimagor/socraticswirlInstructor/blob/master/release/Socraticswirl.docx).
-
 Here are the steps:
 
     * Install SocraticswirlInstructor
     * Have a student list (such as Records/original_data/studentList.tsv)
-    * Have access to the courses directory (such as Records/data/Courses)
+    * Have a path to the courses directory (such as Records/data/Courses)
     * Three header files for the merged students exercises data (such as those Records/original_data/)
     * Change the paths within the onLoad function in zzz.R
     * Change the paths in mergeStudentRecords.sh accordingly
