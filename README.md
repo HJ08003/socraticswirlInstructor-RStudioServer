@@ -1,9 +1,9 @@
 Instructor dashboard for SocraticSwirl
 ======================================
 
-Socraticswirl, developed on top of swirl, lets instructors of the R programming language offer in-class, interactive programming exercises that the instructors view student answers and progress in real-time. This package lets instructors manage their exercises on the Socratic Swirl application, and launch a dashboard to watch their students' progress. See a demo of the dashboard [here](https://dgrtwo.shinyapps.io/socraticswirl/)!
+Socraticswirl, developed on top of swirl, lets instructors of the R programming language offer in-class, interactive programming exercises that the instructors view student answers and progress in real-time. This package lets instructors manage their exercises on the Socratic Swirl application, and launch a dashboard to watch their students' progress.
 
-Socraticswirl had three major components, the student software, a parse.com database, and the instructor software, i.e. the dashboard and course management utilities. As parse.com terminated in January 2017, we revise the system to use local files system to store data, with the option to use a local batabase in the future.
+Socraticswirl had three major components, the student software, a parse.com database, and the instructor software, i.e. the dashboard and course management utilities. Note: as parse.com terminated its service in January 2017, we revised the socraticswirl/socraticswirlInstructo to use the local files system to store data, with the option to use a local batabase in the future.
 
 ![alt text](release/img/SocraticSwirlFlowChart.png)
 
@@ -26,7 +26,7 @@ Use the [devtools](https://github.com/hadley/devtools) package to install:
 # devtools::install_github(c("rstudio/shinydashboard", "HJ08003/socraticswirlInstructor-RStudioServer"))
 ```
 
-The student side software is available at [socraticswirl](https://github.com/HJ08003/socraticswirl-RStudioServer), which maybe installed on a RStudio server.
+The student side software is available at [socraticswirl](https://github.com/HJ08003/socraticswirl-RStudioServer), which maybe be installed on a RStudio server.
 
 Please note that SocraticswirlInstructor may not works with certain version of dplyr. Thus, we specify dplyr version 0.4.3 in the DESCRIPTION file.
 
@@ -71,13 +71,9 @@ library(shiny)
 runApp()
 ```
 
-To view the dashboard via web browser, **please make sure that the configuration file server_instance.R under the subdirectory "data" is also updated accordingly**. You need to specify clearly if it is the test server or production server.
-
-Then, you may launch the dashboard on the Shiny server. Once the Shiny server (s.univ.edu) runs, instructors and preceptors can access your Socraticswirl dashboard at the following web address:
+You may launch the dashboard on the Shiny server. Once the Shiny server (for example s.univ.edu) runs, instructors and preceptors can access your Socraticswirl dashboard at the following web address:
 
     http://s.univ.edu/
-
-We recommend that two servers are set up, one for test and the other for production. The production will be the one to monitor students' progress on the exercises for the class.
 
 ### Creating Exercises
 
