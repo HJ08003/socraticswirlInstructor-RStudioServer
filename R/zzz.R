@@ -16,14 +16,12 @@
 }
 
 .onLoad <- function(libname, pkgname) {
+  FolderRoot = "/users/hubertj/Desktop/GithubClone/socraticswirlInstructor-RStudioServer"
   rstudioserver <- list(
     Instructor = "FSI2017",
-    # CourseFolder = "/usr/local/R/FSI2017/Courses/qss-swirl-pol345",
-    # RecordFolder = "/usr/local/R/FSI2017/Records",
-    CourseFolder = "/users/hubertj/Desktop/GithubClone/socraticswirlInstructor-RStudioServer/Records/data/Courses/qss-swirl-pol345/",
-    # RecordFolder = "/Users/hubertj/Desktop/GithubClone/socraticswirlInstructor-RStudioServer/Records",
-    MergedFolder = "/Users/hubertj/Desktop/GithubClone/socraticswirlInstructor-RStudioServer/Records",
-    ShellScript = "/Users/hubertj/Desktop/GithubClone/socraticswirlInstructor-RStudioServer/Records/mergeStudentRecords.sh"
+    CourseFolder = paste(FolderRoot, "Courses/qss-swirl-socraticswirl/", sep = "/"),
+    MergedFolder = paste(FolderRoot, "Records", sep = "/"),
+    ShellScript = paste(FolderRoot, "Records/mergeStudentRecords.sh", sep = "/")
   )
   options(SocraticswirlInstructorRStudioServer = rstudioserver)
 
