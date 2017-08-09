@@ -100,7 +100,7 @@ load_all_courses <- function(directory) {
 #' @export
 load_student_list <- function(file) {
   # read.csv("../../Records/studentList.tsv", header=TRUE, sep="\t")
-  f <- read.csv(file, header=TRUE, sep="\t", stringsAsFactors=FALSE)
+  f <- read.csv(file, header=TRUE, sep="\t", stringsAsFactors=FALSE, quote = "")
   if (!is.null(f$createdAt))  {
     f$createdAt <- as.POSIXct(strptime(f$createdAt,format='%a %b %d %H:%M:%S %Y'))
     f$updatedAt <- f$createdAt
