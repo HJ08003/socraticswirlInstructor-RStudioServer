@@ -548,7 +548,7 @@ addNames <- function(aTable, d=1) {
       progress_breakdown <- student_responses %>%
         group_by(exercise) %>%
         distinct(student, exercise, isCorrect, .keep_all=TRUE) %>%
-        summarise(n = sum(isCorrect, na.rm = TRUE)) %>%
+        summarise(n = sum(isCorrect == TRUE, na.rm = TRUE)) %>%
         mutate(pct = n / users_logged * 100) %>%
         mutate(pct = ifelse(pct > 100,100,pct))
       progress_breakdown <- left_join(lectureInfo,progress_breakdown, by="exercise") %>%
@@ -652,7 +652,7 @@ output$selectCourse <- renderUI({
   output$completedBar <- renderUI({
     selected_exercise = selectedExercise()
     if(!is.null(selected_exercise)){
-      completed = selectedExercise() %>% filter(isCorrect == TRUE) %>% distinct(student, .keep_all=TRUE) %>% nrow
+      completed = selected_exercise %>% filter(isCorrect == TRUE) %>% distinct(student, .keep_all=TRUE) %>% nrow
       completed_pct = round(completed/usersLogged() * 100)
       if (completed_pct > 100) completed_pct = 100 #Temp fix
     }
