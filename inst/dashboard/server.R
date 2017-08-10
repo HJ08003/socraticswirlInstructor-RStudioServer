@@ -652,7 +652,7 @@ output$selectCourse <- renderUI({
   output$completedBar <- renderUI({
     selected_exercise = selectedExercise()
     if(!is.null(selected_exercise)){
-      completed = selectedExercise() %>% filter(isCorrect) %>% distinct(student, .keep_all=TRUE) %>% nrow
+      completed = selectedExercise() %>% filter(isCorrect == TRUE) %>% distinct(student, .keep_all=TRUE) %>% nrow
       completed_pct = round(completed/usersLogged() * 100)
       if (completed_pct > 100) completed_pct = 100 #Temp fix
     }
@@ -691,7 +691,7 @@ output$selectCourse <- renderUI({
     selected_exercise <- selectedExercise()
     if(!is.null(selected_exercise)){
       selected_exercise <- selected_exercise %>%
-      filter(!isCorrect) %>%
+      filter(!isCorrect == TRUE) %>%
       select("Submitted Command" = command, "Error Message" = errorMsg, TimeSubmitted = updatedAt) %>% arrange(desc(TimeSubmitted))   # adjusted for join-CA
       # selected_exercise[order(selected_exercise[[input$incorrectSort]],decreasing = TRUE), ]
       }
@@ -707,7 +707,7 @@ output$selectCourse <- renderUI({
         selected_exercise <- selectedExercise()
         if(!is.null(selected_exercise)){
           selected_exercise <- selected_exercise %>%
-            filter(!isCorrect, isError) %>%
+            filter(!isCorrect == TRUE, isError == TRUE) %>%
             select(ErrorMessage = errorMsg) %>%
             count(ErrorMessage) %>% arrange(desc(n))
         }
